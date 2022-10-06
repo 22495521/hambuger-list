@@ -1,0 +1,91 @@
+
+.wrap{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.logo a{
+    display: block;
+    width: 100px;
+    height: 60px;
+    margin: auto 0;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/4/4f/SVG_Logo.svg');
+    background-repeat: no-repeat;
+    text-indent:101%; /*首行縮排*/
+    overflow:hidden; /*自動隱藏超出的文字或圖片*/
+    white-space:nowrap; /*希望元素在第一排上面，沒有斷行*/
+
+    
+}
+.header{
+    margin: 0 auto;
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.header ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    transition: max-height 1s;
+}
+.hambuger-menu {
+    display: none;
+    width: 100px;
+    height: 70px;
+    background-image: url('https://www.svgrepo.com/show/95381/menu.svg');
+    background-repeat: no-repeat;
+    text-indent:101%; /*首行縮排*/
+    overflow:hidden; /*自動隱藏超出的文字或圖片*/
+    white-space:nowrap; /*希望元素在第一排上面，沒有斷行*/
+
+}
+
+.header-list{
+    margin:auto 0;
+}
+.header-list a{
+    display: block;
+    background-color: yellow;
+    text-decoration: none;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+@media(max-width:768px){
+
+    .header ul{
+    
+        max-height: 0px;
+        overflow: hidden;
+        position: absolute;
+        display: block;
+        z-index: 100;
+        top:100px;
+        left: 0px;
+        right: 0px;
+    }
+    .hambuger-menu {
+        display: block;
+    }
+
+}
+/*  開啟漢堡選單 star */
+.header  .active{
+    max-height: 300px;
+}
+/* end   */
+
+
+
+
+.border{
+    border-top: 5px solid black;
+    width: 80%;
+    margin: 0 auto;
+}
+.content{
+    width: 80%;
+    margin: 0 auto;
+}
