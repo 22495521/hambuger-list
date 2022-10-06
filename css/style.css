@@ -17,6 +17,7 @@
     
 }
 .header{
+    background-color:bisque;
     margin: 0 auto;
     width: 80%;
     height: 100px;
@@ -54,9 +55,16 @@
 }
 
 @media(max-width:768px){
+    .header{
+        position: fixed;
+        width: 100%;
+    }
 
+    .content{
+        font-size: 25px;
+        padding-top:100px ;
+    }
     .header ul{
-    
         max-height: 0px;
         overflow: hidden;
         position: absolute;
@@ -73,7 +81,7 @@
 }
 /*  開啟漢堡選單 star */
 .header  .active{
-    max-height: 300px;
+    max-height: 500px
 }
 /* end   */
 
